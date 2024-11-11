@@ -1,0 +1,144 @@
+/* Container for the whole home page */
+.home-container {
+  width: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #31494F;
+  color: white;
+}
+
+.header .logo h1 {
+  margin: 0;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  color: #61dafb;
+}
+
+/* Carousel Styles */
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 500px; /* Adjust height as per your design */
+  overflow: hidden; /* Hide overflow to keep carousel neat */
+}
+
+.carousel-image {
+  width: 100%; /* Ensure it covers the entire width */
+  max-height: 400px; /* Adjust this value to reduce the image height */
+  object-fit: cover; /* Ensure the image covers the entire area without stretching */
+  display: block;
+}
+
+.prev-btn,
+.next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 2rem;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Books Section */
+.books-section {
+  padding: 40px 20px;
+  background-color: #f4f4f4;
+}
+
+.books-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.book-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.book-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.book-card img {
+  max-width: 100%;
+  max-height: 200px; /* Adjust the height to your desired size */
+  height: auto; /* Maintain aspect ratio */
+  width: auto; /* Maintain aspect ratio */
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.book-card h3 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+.book-card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.rate-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.rate-button:hover {
+  background-color: #0056b3;
+}
+
+/* Footer Styles */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #31494F;
+  color: white;
+  margin-top: 40px;
+}
